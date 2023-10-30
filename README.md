@@ -1,13 +1,3 @@
 # World of Silence
 
-{% raw %}
-~~~html
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-~~~
-{% endraw %}
+* [poem - 长年城]({% post_url 2023-10-30-longyearbyen %})
