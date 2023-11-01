@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: A novel clustering method - crystal clustering
+title: A novel clustering method - Crystal clustering
 author: Van
 category: climate
 ---
