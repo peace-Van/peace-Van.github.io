@@ -61,18 +61,23 @@ This is analogous to the energy stored in a system of two point charges. The fur
 > Under common scenarios we do not add up the weights of data observations in the same connected component when calculating enthalpy. If we do so, it would produce a strong gravitational effect that draws a large number of data observations into one cluster, which, is a more faithful reproduction of the crystallization process (crystal growth after nucleation), but is not desired under the data clustering setting. What we want to simulate here is the system kept at the nucleation stage.
 
 Enthalpy is summable with respect to bonds. For a certain state of the system, add up the $\Delta H^{form}$ of all existing bonds and we get the enthalpy of the state. That is
+
 $$H = -\sum_{i, j \in e} \frac{w_i w_j}{d_{i, j}^2}$$
 
 ### Entropy
 For a state with $k$ clusters and each cluster $i$ has data observations whose weights sum up to $c_i$, the entropy is calculated as
+
 $$S = \frac{1}{N} \sum_{i=1}^k c_i \log \frac{c_i}{N}$$
+
 where $N = c_1 + c_2 + ... + c_k = \sum_{j=1}^n w_j$. This is from the definition of information entropy.  
    
 It's not easy to calculate the entropy change of an action ($\Delta S_{i,j}$) without using some approximation method. We have to calculate both the entropy of the state before the action and the entropy of the state after the action, and then subtract. Unlike enthalpy change, this value **is** dependent on the state of the system.
 
 ## Algorithm
 We are going to solve the optimization problem on $G_{MST}$. Remove some edges of $G_{MST}$, so that
+
 $$f(G_{MST}, T) = H - TS$$
+
 is minimized. $T$ is a given positive constant (hyperparamter). $H$ and $S$ are defined above.  
    
 The code provides four algorithms. Here I would only introduce the `greedy-backtrack` algorithm, which should be used in most cases. This algorithm simulates the precipitation-solubility equilibrium.  
