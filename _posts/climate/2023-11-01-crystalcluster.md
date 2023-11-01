@@ -5,7 +5,7 @@ author: Van
 category: climate
 ---
 
-Code is on [GitHub](github.com/peace-Van/crystal-cluster)   
+Code is on [GitHub](https://github.com/peace-Van/crystal-clustering)   
    
 *Note: This clustering method, proposed by myself, is used in my climate classification.*   
    
