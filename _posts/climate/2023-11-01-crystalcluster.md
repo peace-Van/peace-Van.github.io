@@ -15,7 +15,7 @@ Imagine how a grain of sugar dissolves in water. Before it dissolves, the sucros
 The sucrose molecule (credit: [UCLA chem](https://www.chem.ucla.edu/~harding/IGOC/S/sucrose.html))   
    
 ![p2](/assets/crystalcluster/sucrose-crystal.png)   
-The crystal structure of sucrose (credit: [Ji-Hun An et al.](https://www.mdpi.com/2073-4352/7/10/284)). The dashed lines show the hydrogen bonds.
+The crystal structure of sucrose (credit: [Ji-Hun An et al.](https://www.mdpi.com/2073-4352/7/10/284)) The dashed lines show the hydrogen bonds.
 
 When met with water, some of the hydrogen bonds break for water molecules cut in. Say there's not enough water, and not all the bonds are broken. In this case, at the macroscopic level, the sugar is partially dissolved and there's no ongoing net dissolution in the system, while at the microscopic level, the sucrose molecules in the aquatic phase occasionally collides with the ones on the edge of the solid phase, forming hydrogen bond and precipitates. Meanwhile, on the other side of the solid water molecules drag out the solid-phase-locked sucrose molecules. Microscopic dissolution and precipitation are happening simultaneously at the same speed, so the macroscopic observation is no net dissolution or precipitation.
  
@@ -96,7 +96,7 @@ On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the c
 ![pp6](/assets/crystalcluster/exp6.png)
 
 ## Further Information
-This method actually belongs to a group of clustering algorithms of *optimising different criteria – divisive strategy over MST* named by [Marek Gagolewski et al.](https://arxiv.org/pdf/2303.05679.pdf). In the article they extensively studied the clustering algorithms based on MST and compared with traditional algorithms like $k$-means, BIRCH, linkage, PAM, etc. They concluded that *MSTs are suitable for representing dense clusters of arbitrary shapes, and are relatively robust to outliers in the outer parts of the feature space*.   
+This method actually belongs to a group of clustering algorithms of *optimising different criteria – divisive strategy over MST* named by [Marek Gagolewski et al.](https://arxiv.org/pdf/2303.05679.pdf) In the article they extensively studied the clustering algorithms based on MST and compared with traditional algorithms like $k$-means, BIRCH, linkage, PAM, etc. They concluded that *MSTs are suitable for representing dense clusters of arbitrary shapes, and are relatively robust to outliers in the outer parts of the feature space*.   
 
 This method is out of their scope of study because it does not have a fixed number of clusters $k$ as input. Rather, we use a *relaxation strength* parameter $T$. This can have its own pros and cons. $k$ is more intuitive to humans, while the good things are 
 - the scale is continuous, unlike $k$ has to be an integer
@@ -104,6 +104,6 @@ This method is out of their scope of study because it does not have a fixed numb
    
 It may need more trial and error to get the best $T$ for the desired outcome.   
 
-> The most similar method discussed by [Marek Gagolewski et al.](https://arxiv.org/pdf/2303.05679.pdf) is [ITM by Andreas C. M¨uller et al.](https://www.nowozin.net/sebastian/papers/mueller2012itclustering.pdf). Their method requires the number of clusters $k$ as input and targets at maximizing the mutual information between input data and output labels. It approximates on entropy calculation and thus may run much faster.
+> The most similar method discussed by [Marek Gagolewski et al.](https://arxiv.org/pdf/2303.05679.pdf) is [ITM by Andreas C. M¨uller et al.](https://www.nowozin.net/sebastian/papers/mueller2012itclustering.pdf) Their method requires the number of clusters $k$ as input and targets at maximizing the mutual information between input data and output labels. It approximates on entropy calculation and thus may run much faster.
 
 This method may also have more advanced applications, such as a multi-stage clustering process which simulates the fine fractionation operation in chemical production: at a higher temperature, the first aggregated cluster is removed from the system, and then gradually cool down to remove the subsequent clusters step by step at different levels of temperature. The gravitational effect of agglomerated weight is yet to be further explored and may have its potential applications.
