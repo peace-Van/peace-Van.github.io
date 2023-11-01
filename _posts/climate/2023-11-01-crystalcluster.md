@@ -18,8 +18,8 @@ The sucrose molecule (credit: [UCLA chem](https://www.chem.ucla.edu/~harding/IGO
 The crystal structure of sucrose (credit: [Ji-Hun An et al.](https://www.mdpi.com/2073-4352/7/10/284)). The dashed lines show the hydrogen bonds.
 
 When met with water, some of the hydrogen bonds break for water molecules cut in. Say there's not enough water, and not all the bonds are broken. In this case, at the macroscopic level, the sugar is partially dissolved and there's no ongoing net dissolution in the system, while at the microscopic level, the sucrose molecules in the aquatic phase occasionally collides with the ones on the edge of the solid phase, forming hydrogen bond and precipitates. Meanwhile, on the other side of the solid water molecules drag out the solid-phase-locked sucrose molecules. Microscopic dissolution and precipitation are happening simultaneously at the same speed, so the macroscopic observation is no net dissolution or precipitation.
-
->If you cannot imagine that, [this video](https://www.youtube.com/watch?v=BavKFkSzNFE) (credit: [Berean Builders](https://www.youtube.com/@Bereanbuilders/about)) may help.  
+ 
+> If you can't imagine that, [this video](https://www.youtube.com/watch?v=BavKFkSzNFE) (credit: [Berean Builders](https://www.youtube.com/@Bereanbuilders/about)) may help.  
 
 As the partial dissolution system stablizes (aka reaches the **thermodynamically stable state**), it naturally forms several clusters of solid blocks. If we view the sucrose molecules as the data observations to cluster, now we get the result with outliers dissolved away (or as singleton clusters).   
 
@@ -38,7 +38,7 @@ We keep the system at a pre-set temperature, so $T$ is a constant here. Whenever
 
 Next let's define $H$ and $S$ in terms of the data clustering system. We have to define the system itself first.   
    
->This is a blog post, so I prefer to make it as simple as possible, using minimal math representations.
+> This is a blog post, so I prefer to make it as simple as possible, using minimal math representations.
    
  - **Data obervations** to be clustered: a **$n$ by $m$ matrix $X$**, rows are the observations and columns are feature dimensions. The observations can have different weights, $w_i$ for the $i$-th observation. This can be plotted as a graph $G$ with $n$ nodes. At this point let's assume the graph is fully connected, and the edge weight is the distance in the feature space between the connected nodes.   
 
@@ -98,5 +98,7 @@ This method is out of their scope of study because it does not have a fixed numb
 - easier to deal with outliers, no need to investigate the number of outliers for a good guess of $k$
    
 It may need more trial and error to get the best $T$ for the desired outcome.   
+
+> The most similar method discussed by [Marek Gagolewski et al.](https://arxiv.org/pdf/2303.05679.pdf) is [ITM by Andreas C. M¨uller et al.](https://www.nowozin.net/sebastian/papers/mueller2012itclustering.pdf). Their method requires the number of clusters $k$ as input and targets at maximizing the mutual information between input data and output labels. It approximates on entropy calculation and thus may run much faster.
 
 This method may also have more advanced applications, such as a multi-stage clustering process which simulates the fine fractionation operation in chemical production: at a higher temperature, the first aggregated cluster is removed from the system, and then gradually cool down to remove the subsequent clusters step by step at different levels of temperature. The gravitational effect of agglomerated weight is yet to be further explored and may have its potential applications.
