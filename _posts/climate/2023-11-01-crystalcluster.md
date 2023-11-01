@@ -84,7 +84,7 @@ The code provides four algorithms. Here I would only introduce the `greedy-backt
 
 ![p3](/assets/crystalcluster/algorithm.PNG)
 
-The description is self-explanatory and I would rather not dive into the details here. One thing to note is that the algorithm does not guarantee to converge nor to find a global optimum, but in most cases it converges fast and the result is good enough to use. It may not be applicable to large datasets because it's $O(n^2)$ in both time and space complexity.
+The description is self-explanatory and I would rather not dive into the details here. Interested readers may check the code. One thing to note is that the algorithm does not guarantee to converge nor to find a global optimum (aka the thermodynamically stable state), but in most cases it converges fast and the result is good enough to use. It may not be applicable to large datasets because it's $O(n^2)$ in both time and space complexity.
 
 ## Test
 On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the clustering results are shown as follows. It's clear that number of clusters increases with rise of temperature. 
