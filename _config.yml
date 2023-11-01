@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 title: Van's homepage
 description: A child exploring the world alone.
+markdown: kramdown
