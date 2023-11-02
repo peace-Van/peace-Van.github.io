@@ -105,7 +105,7 @@ This method is out of their scope of study because it does not have a fixed numb
    
 It may need more trial and error to get the best $T$ for the desired outcome.   
 
-> Here $T$ involves everything that moves the equilibrium, not only temperature. For example in the solubility equilibrium, it can point to the amount of solvent - with enough water sugar can be totally dissolved, which literally means every data observation goes into a singleton cluster. *Relaxation strength* can better describe this parameter. The physical phenomenon is more complex than what is discussed above, and there's no need to dive into individual factors that affect the equilibrium to introduce the clustering method.   
+> Here $T$ involves everything that moves the equilibrium, not only temperature. For example in the solubility scenario it can point to the amount of solvent - with enough water sugar can be totally dissolved, which literally means every data observation goes into a singleton cluster. *Relaxation strength* can better describe this parameter. The physical phenomenon is more complex than what is discussed above, and there's no need to dive into individual factors that affect the equilibrium to introduce the clustering method.   
 
 > The most similar method discussed by [Marek Gagolewski et al.](https://arxiv.org/pdf/2303.05679.pdf) is [ITM by Andreas C. M¨uller et al.](https://www.nowozin.net/sebastian/papers/mueller2012itclustering.pdf) Their method requires the number of clusters $k$ as input and targets at maximizing the mutual information between input data and output labels. It approximates on entropy calculation and thus may run much faster.
 
