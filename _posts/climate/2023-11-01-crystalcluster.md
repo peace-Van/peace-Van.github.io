@@ -55,7 +55,7 @@ A state of the data clustering system
 ### Enthalpy
 For two data observations $X_i, X_j$ with weight $w_i, w_j$ and the distance between them is $d_{i, j}$, how do we define the bond energy between them? Here I would employ the concept in electrostatics:
 
-$$\Delta H_{i,j}^{form} = - \frac{w_i w_j}{d_{i, j}^2}$$
+$$\Delta H_{i,j}^{form} = - \frac{w_i w_j}{d_{i, j}}$$
 
 This is analogous to the energy stored in a system of two point charges. The further two points are, the less potential they form a bond in between ($\Delta H$ is less negative). This value **is not** dependent on the state of the system.  
 
@@ -63,7 +63,7 @@ This is analogous to the energy stored in a system of two point charges. The fur
 
 Enthalpy is summable with respect to bonds. For a certain state of the system, add up the $\Delta H^{form}$ of all existing bonds and we get the enthalpy of the state. That is
 
-$$H = -\sum_{i, j \in e} \frac{w_i w_j}{d_{i, j}^2}$$
+$$H = -\sum_{i, j \in e} \frac{w_i w_j}{d_{i, j}}$$
 
 ### Entropy
 For a state with $k$ clusters and each cluster $i$ has data observations whose weights sum up to $c_i$, the entropy is calculated as
