@@ -5,7 +5,7 @@
 * [长年城](/_posts/poem/2023-10-30-longyearbyen.md)
 * [小窗的故事I](/_posts/poem/2023-11-01-smallwindowI.md)
 * [小窗的故事II](/_posts/poem/2023-11-01-smallwindowII.md)
-* [手表](/_posts/poem/2023-11-03-watch.md)
+* [他的手表](/_posts/poem/2023-11-03-watch.md)
 
 ## Quantitative Investment
 
