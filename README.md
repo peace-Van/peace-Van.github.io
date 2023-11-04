@@ -6,6 +6,7 @@
 * [小窗的故事I](/_posts/poem/2023-11-01-smallwindowI.md)
 * [小窗的故事II](/_posts/poem/2023-11-01-smallwindowII.md)
 * [他的手表](/_posts/poem/2023-11-03-watch.md)
+* [最后的枫叶](/_posts/poem/2023-11-04-lastmaple.md)
 
 ## Quantitative Investment
 
