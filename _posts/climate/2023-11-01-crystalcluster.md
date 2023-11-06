@@ -105,7 +105,7 @@ This method is out of their scope of study because it does not have a fixed numb
 - the scale is continuous, unlike $k$ has to be an integer
 - easier to deal with outliers, no need to investigate the number of outliers for a good guess of $k$
    
-It may need more trial and error to get the best $T$ for the desired outcome.   
+It may need more trial and error to get the best $T$ for the desirable outcome.   
 
 > Here $T$ involves everything that moves the equilibrium, not only temperature. For example in the solubility scenario it can point to the amount of solvent - with enough water sugar can be totally dissolved, which corresponds to a very high $T$ so that every data observation goes into a singleton cluster. *Relaxation strength* can better describe this parameter. The physical phenomenon is more complex than what is discussed above, and there's no need to dive into individual factors that affect the equilibrium to introduce the clustering method.   
 
