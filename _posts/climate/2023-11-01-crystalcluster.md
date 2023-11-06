@@ -99,7 +99,7 @@ On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the c
 ![pp6](/assets/crystalcluster/exp6.png)
 
 ## Further Information
-This method actually belongs to a group of clustering algorithms of *optimising different criteria – divisive strategy over MST* named by [Marek Gagolewski et al. (2023)](https://arxiv.org/pdf/2303.05679.pdf). In the article they extensively studied the clustering algorithms based on MST and compared with traditional algorithms like $k$-means, BIRCH, linkage, PAM, etc. They concluded that *MSTs are suitable for representing dense clusters of arbitrary shapes, and are relatively robust to outliers in the outer parts of the feature space*.   
+This method actually belongs to a group of clustering algorithms of *optimising different criteria – divisive strategy over MST* named by [Marek Gagolewski et al. (2023)](https://arxiv.org/pdf/2303.05679.pdf). In the article they comprehensively studied the clustering algorithms based on MST and compared with traditional algorithms like $k$-means, BIRCH, linkage, PAM, etc. They concluded that *MSTs are suitable for representing dense clusters of arbitrary shapes, and are relatively robust to outliers in the outer parts of the feature space*.   
 
 This method is out of their scope of study because it does not have a fixed number of clusters $k$ as input. Rather, we use a *relaxation strength* parameter $T$. This can have its own pros and cons. $k$ is more intuitive to humans, while the good things are 
 - the scale is continuous, unlike $k$ has to be an integer
