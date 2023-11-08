@@ -51,7 +51,7 @@ Next let's define $H$ and $S$ in terms of the data clustering system. We have to
  - **State**: The system evolves with bonds forming and breaking during the process before the stable state is reached. During the process, get a snapshot of the system, and we will have a subgraph of $G_{MST}$, with the same set of nodes and a subset of edges.
  - **Action**: A bond forming or breaking is called an action. An action that results in the decrease of the Gibbs free energy is called a **feasible action**.   
 
-![p3](/assets/crystalcluster/adjacency.png)   
+![p3](/assets/crystalcluster/adjacency.png){: .align-center}   
 A state of the data clustering system   
 
 ### Enthalpy
@@ -91,12 +91,12 @@ The description is self-explanatory and I would rather not dive into the details
 
 ## Test
 On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the clustering results are shown as follows. It's clear that number of clusters increases with rise of temperature. 
-![pp1](/assets/crystalcluster/exp1.png)
-![pp2](/assets/crystalcluster/exp2.png)
-![pp3](/assets/crystalcluster/exp3.png)
-![pp4](/assets/crystalcluster/exp4.png)
-![pp5](/assets/crystalcluster/exp5.png)
-![pp6](/assets/crystalcluster/exp6.png)
+![pp1](/assets/crystalcluster/exp1.png){: .align-center}
+![pp2](/assets/crystalcluster/exp2.png){: .align-center}
+![pp3](/assets/crystalcluster/exp3.png){: .align-center}
+![pp4](/assets/crystalcluster/exp4.png){: .align-center}
+![pp5](/assets/crystalcluster/exp5.png){: .align-center}
+![pp6](/assets/crystalcluster/exp6.png){: .align-center}
 
 ## Further Information
 This method actually belongs to a group of clustering algorithms of *optimising different criteria – divisive strategy over MST* named by [Marek Gagolewski et al. (2023)](https://arxiv.org/pdf/2303.05679.pdf). In the article they comprehensively studied the clustering algorithms based on MST and compared with traditional algorithms like $k$-means, BIRCH, linkage, PAM, etc. They concluded that *MSTs are suitable for representing dense clusters of arbitrary shapes, and are relatively robust to outliers in the outer parts of the feature space*.   
