@@ -53,6 +53,7 @@ Next let's define $H$ and $S$ in terms of the data clustering system. We have to
 
 {: text-align: center;}
 ![p3](/assets/crystalcluster/adjacency.png)
+{: text-align: center;}
 A state of the data clustering system   
 
 ### Enthalpy
