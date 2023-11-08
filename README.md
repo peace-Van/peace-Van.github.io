@@ -8,6 +8,7 @@
 * [他的手表](/_posts/poem/2023-11-03-watch.md)
 * [最后的枫叶](/_posts/poem/2023-11-04-lastmaple.md)
 * [阮郎归.耒阳道中为张处父推官赋](/_posts/poem/2023-11-08-ruanlanggui.md)
+* [面朝大海 青松常在](/_posts/poem/2023-11-08-facingthesea.md)
 
 ## Quantitative Investment
 
