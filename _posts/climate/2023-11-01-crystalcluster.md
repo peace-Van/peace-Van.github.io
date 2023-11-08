@@ -51,8 +51,9 @@ Next let's define $H$ and $S$ in terms of the data clustering system. We have to
  - **State**: The system evolves with bonds forming and breaking during the process before the stable state is reached. During the process, get a snapshot of the system, and we will have a subgraph of $G_{MST}$, with the same set of nodes and a subset of edges.
  - **Action**: A bond forming or breaking is called an action. An action that results in the decrease of the Gibbs free energy is called a **feasible action**.   
 
-{: text-align: center;} 
-![p3](/assets/crystalcluster/adjacency.png)   
+<p align="center">
+   <img src="/assets/crystalcluster/adjacency.png" width="100%" />
+</p>
 A state of the data clustering system   
 
 ### Enthalpy
