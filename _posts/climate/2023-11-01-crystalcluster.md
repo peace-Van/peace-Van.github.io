@@ -52,8 +52,8 @@ Next let's define $H$ and $S$ in terms of the data clustering system. We have to
  - **Action**: A bond forming or breaking is called an action. An action that results in the decrease of the Gibbs free energy is called a **feasible action**.   
 
 {: text-align: center;}
-![p3](/assets/crystalcluster/adjacency.png)   
-{: text-align: center;}A state of the data clustering system   
+![p3](/assets/crystalcluster/adjacency.png)
+A state of the data clustering system   
 
 ### Enthalpy
 For two data observations $X_i, X_j$ with weight $w_i, w_j$ and the distance between them is $d_{i, j}$, how do we define the bond energy between them? Here I would employ the concept in electrostatics:
