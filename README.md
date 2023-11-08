@@ -7,6 +7,7 @@
 * [小窗的故事II](/_posts/poem/2023-11-01-smallwindowII.md)
 * [他的手表](/_posts/poem/2023-11-03-watch.md)
 * [最后的枫叶](/_posts/poem/2023-11-04-lastmaple.md)
+* [阮郎归.耒阳道中为张处父推官赋](/_posts/poem/2023-11-08-ruanlanggui.md)
 
 ## Quantitative Investment
 
@@ -17,3 +18,4 @@
 * [The 2023 state of the climate report: Entering uncharted territory](/_posts/climate/2023-10-30-2023report.md)
 * [A novel clustering method - Crystal clustering](/_posts/climate/2023-11-01-crystalcluster.md)
 * [A brief walkthrough of (Köppen) climate classification](/_posts/climate/2023-11-05-koppen.md)
+* [A neural network approach for climate classification - Sec 1. Vegetation mapping methodology](/_posts/climate/2023-11-08-sec1.md)
