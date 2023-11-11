@@ -20,3 +20,4 @@
 * [A novel clustering method - Crystal clustering](/_posts/climate/2023-11-01-crystalcluster.md)
 * [A brief walkthrough of (Köppen) climate classification](/_posts/climate/2023-11-05-koppen.md)
 * [A neural network approach for climate classification - Sec 1. Vegetation mapping methodology](/_posts/climate/2023-11-08-sec1.md)
+* [A neural network approach for climate classification - Sec 1. Vegetation mapping result and discussion](/_posts/climate/2023-11-11-sec2.md)
