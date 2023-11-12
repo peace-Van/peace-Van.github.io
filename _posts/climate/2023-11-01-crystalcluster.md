@@ -13,12 +13,14 @@ Code is on [GitHub](https://github.com/peace-Van/crystal-clustering)
 Imagine how a grain of sugar dissolves in water. Before it dissolves, the sucrose molecules form hydrogen bonds in between, so they condense as a macroscopic solid bulk.   
    
 ![p1](/assets/crystalcluster/sucrose01.png)   
-The sucrose molecule (credit: [UCLA chem](https://www.chem.ucla.edu/~harding/IGOC/S/sucrose.html))   
+<p align="center">
+The sucrose molecule (credit: [UCLA chem](https://www.chem.ucla.edu/~harding/IGOC/S/sucrose.html))
+</p>
    
 ![p2](/assets/crystalcluster/sucrose-crystal.png)   
 The crystal structure of sucrose (credit: [Ji-Hun An et al. (2017)](https://www.mdpi.com/2073-4352/7/10/284)) The dashed lines show the hydrogen bonds.
 
-> Hydrogen bonds are what the sucrose molecules take to form the crystal structures. As a side note there are also van der Waals force between the molecules.
+> Hydrogen bonds are what the sucrose molecules take to form the crystal structures. As a side note there's also van der Waals force between the molecules.
 
 When met with water, some of the hydrogen bonds break for water molecules cut in. Say there's not enough water, and not all the bonds are broken. In this case, at the macroscopic level, the sugar is partially dissolved and there's no ongoing net dissolution in the system, while at the microscopic level, the sucrose molecules in the aquatic phase occasionally collides with the ones on the edge of the solid phase, forming hydrogen bond and precipitates. Meanwhile, on the other side of the solid water molecules drag out the solid-phase-locked sucrose molecules. Microscopic dissolution and precipitation are happening simultaneously at the same speed, so the macroscopic observation is no net dissolution or precipitation.
  
