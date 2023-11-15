@@ -21,7 +21,7 @@
 
 ### A neural network approach for climate classification
 
-* [A brief walkthrough of (Köppen) climate classification - Preface](/_posts/climate/2023-11-05-koppen.md)
+* [Preface. A brief walkthrough of (Köppen) climate classification](/_posts/climate/2023-11-05-koppen.md)
 * [Sec 1. Vegetation mapping methodology](/_posts/climate/2023-11-08-sec1.md)
 * [Sec 2. Vegetation mapping result and discussion](/_posts/climate/2023-11-11-sec2.md)
 * [Sec 3. Simple SOM clustering](/_posts/climate/2023-11-12-sec3.md)
