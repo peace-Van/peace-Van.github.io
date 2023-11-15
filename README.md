@@ -18,8 +18,11 @@
 
 * [The 2023 state of the climate report: Entering uncharted territory](/_posts/climate/2023-10-30-2023report.md)
 * [A novel clustering method - Crystal clustering](/_posts/climate/2023-11-01-crystalcluster.md)
+
+### A neural network approach for climate classification
+
 * [A brief walkthrough of (Köppen) climate classification - Preface](/_posts/climate/2023-11-05-koppen.md)
-* [A neural network approach for climate classification - Sec 1. Vegetation mapping methodology](/_posts/climate/2023-11-08-sec1.md)
-* [A neural network approach for climate classification - Sec 2. Vegetation mapping result and discussion](/_posts/climate/2023-11-11-sec2.md)
-* [A neural network approach for climate classification - Sec 3. Simple SOM clustering](/_posts/climate/2023-11-12-sec3.md)
-* [A neural network approach for climate classification - Sec 4. The 322 scheme](/_posts/climate/2023-11-14-sec4.md)
+* [Sec 1. Vegetation mapping methodology](/_posts/climate/2023-11-08-sec1.md)
+* [Sec 2. Vegetation mapping result and discussion](/_posts/climate/2023-11-11-sec2.md)
+* [Sec 3. Simple SOM clustering](/_posts/climate/2023-11-12-sec3.md)
+* [Sec 4. The 322 scheme](/_posts/climate/2023-11-14-sec4.md)
