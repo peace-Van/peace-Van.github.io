@@ -24,5 +24,5 @@
 * [Preface. A brief walkthrough of (Köppen) climate classification](/_posts/climate/2023-11-05-koppen.md)
 * [Sec 1. Vegetation mapping methodology](/_posts/climate/2023-11-08-sec1.md)
 * [Sec 2. Vegetation mapping result and discussion](/_posts/climate/2023-11-11-sec2.md)
-* [Sec 3. Simple SOM clustering](/_posts/climate/2023-11-12-sec3.md)
+* [Sec 3. Climate features and simple SOM clustering](/_posts/climate/2023-11-12-sec3.md)
 * [Sec 4. The 322 scheme](/_posts/climate/2023-11-14-sec4.md)
