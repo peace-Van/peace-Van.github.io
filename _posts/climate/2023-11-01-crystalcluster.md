@@ -31,7 +31,7 @@ As the partial dissolution system stablizes (aka reaches the **thermodynamically
 ## Modelling
 But how can we model this process by computer algorithm? We need to dive deeper into the motive of this spontaneous process - what drives the bond to form/break?   
 
-> For the sake of simplicity we will make certain assumptions, e.g. there's no kinetic barrier, no pressure-volume work in the process.   
+> For the sake of simplicity we will make certain assumptions, e.g. there's no pressure-volume work in the process.   
 
 It's the **Gibbs Free Energy**. The definition is
 
@@ -65,11 +65,11 @@ For two data observations $X_i, X_j$ with weight $w_i, w_j$ and the distance bet
 
 $$\Delta H_{i,j}^{form} = - \frac{w_i w_j}{d_{i, j}}$$
 
-This is analogous to the energy stored in a system of two point charges. The further two points are, the less potential they form a bond in between ($\Delta H$ is less negative). This value **is not** dependent on the state of the system.  
+This is analogous to the energy stored in a system of two point charges. The closer the two points are, the higher potential they form a bond in between ($\Delta H$ is more negative). The negative inverse manipulation emphasizes this effect for the points that are close enough. The value of $\Delta H_{i,j}^{form}$ **is not** dependent on the state of the system.  
 
 > Under common scenarios we do not add up the weights of data observations in the connected component when calculating enthalpy. If we do so, it would produce a strong gravitational effect that draws a large number of data observations into one cluster, which, is a more faithful reproduction of the crystallization process (crystal growth after nucleation), but is not desired under the data clustering setting. What we want to simulate here is the system kept at the nucleation stage.
 
-> As long as weight is not considered, the generated MST is the same as if Euclidean distance is directly used as the formula for bond energy. The $-1/d$ manipulation only affects the scaling of the parameter $T$.  
+> As long as weight is not considered, the generated MST is the same as if Euclidean distance is directly used as the formula for bond energy.  
 
 Enthalpy is summable with respect to bonds. For a certain state of the system, add up the $\Delta H^{form}$ of all existing bonds and we get the enthalpy of the state. That is
 
@@ -95,7 +95,9 @@ The code provides four algorithms. Here I would only introduce the `greedy-backt
 
 ![p3](/assets/crystalcluster/algorithm.PNG)
 
-The description is self-explanatory and I would rather not dive into the details here. Interested readers may check the commented code. One thing to note is that the algorithm does not guarantee to converge nor to find a global optimum (aka the thermodynamically stable state), but in most cases it converges fast and the result is good enough to use. It may not be applicable to large datasets because it's $O(n^2)$ in both time and space complexity.
+The description is self-explanatory and I would rather not dive into the details here. Interested readers may check the commented code. One thing to note is that the algorithm does not guarantee to converge nor to find the global optimum (aka the thermodynamically stable state), but in most cases it converges fast and the result is good enough to use (or even preferred over the thermodynamically stable state, as we can see later). It may not be applicable to large datasets because it's $O(n^2)$ in both time and space complexity.
+
+> Why is this algorithm not guaranteed to find the global optimum? It's easy to understand by physical chemistry. Some reactions, e.g. hydrogen reacting with oxygen to produce water, though thermodynamically possible (the energy of the product state is lower than the energy of the reactant state), only happen under certain conditions, e.g. ignition. Ignition provides the initial energy to induce the reaction. The necessary amount of energy is called activation energy. Or, there's some other reactant (catalyst) in the system which provides a shortcut that gets around the energy barrier for the reaction to happen. On the other hand, from the viewpoint of data science, this can be understood by analogizing to gradient descent. This greedy algorithm is similar to gradient descent, which may stuck into a local minimum, and in this situation some momentum is needed to get over the local minimum and continue the search. We will show this situation later.
 
 ## Test
 On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the clustering results are shown as follows. It's clear that number of clusters increases with rise of temperature. 
