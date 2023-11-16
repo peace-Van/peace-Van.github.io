@@ -61,13 +61,15 @@ Next let's define $H$ and $S$ in terms of the data clustering system. We have to
 </p>
       
 ### Enthalpy
-For two data observations $X_i, X_j$ with weight $w_i, w_j$ and the distance between them is $d_{i, j}$, how do we define the bond energy between them? Here I would employ the concept in electrostatics:
+For two data observations $X_i, X_j$ with weight $w_i, w_j$ and the distance between them is $d_{i, j}$, how do we define the *bond energy* between them? Here I would employ the concept in electrostatics:
 
 $$\Delta H_{i,j}^{form} = - \frac{w_i w_j}{d_{i, j}}$$
 
 This is analogous to the energy stored in a system of two point charges. The further two points are, the less potential they form a bond in between ($\Delta H$ is less negative). This value **is not** dependent on the state of the system.  
 
 > Under common scenarios we do not add up the weights of data observations in the connected component when calculating enthalpy. If we do so, it would produce a strong gravitational effect that draws a large number of data observations into one cluster, which, is a more faithful reproduction of the crystallization process (crystal growth after nucleation), but is not desired under the data clustering setting. What we want to simulate here is the system kept at the nucleation stage.
+
+> As long as weight is not considered, the generated MST is the same as if Euclidean distance is directly used as *bond energy*.   
 
 Enthalpy is summable with respect to bonds. For a certain state of the system, add up the $\Delta H^{form}$ of all existing bonds and we get the enthalpy of the state. That is
 
