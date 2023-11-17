@@ -123,7 +123,7 @@ Given the state reaches equilibrium, we have $\Delta G = 0$, so
 
 $$T_{theo} = \frac{\sum_{i, j \in e_{MST}} \frac{w_i w_j}{d_{i, j}}}{\log N}$$
 
-This is the value of $T$ that thermodynamically (or say theoretically) guarantees the system evolves into the ending state. But the evolution may not be possible by kinetics, which means the `greedy-backtrack` algorithm may not discover the ending state.   
+This is the value of $T$ that thermodynamically (or say theoretically) guarantees the system evolves into the ending state. But the evolution may not be possible by kinetics, which means the `greedy-backtrack` algorithm may not discover the ending state. More often than not it cannot.  
 
 The theoretical temperature of the Iris flower dataset is calculated to be ~179.8. Our experiment showed given $T=180$, the system evolved into a state of 27 clusters instead of the theoretical 102 clusters based on the `greedy-backtrack` algorithm.   
 
