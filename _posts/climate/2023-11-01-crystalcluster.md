@@ -102,6 +102,9 @@ The description is self-explanatory and I would rather not dive into the details
 
 > Why is this algorithm not guaranteed to find the global optimum? It's easy to understand by physical chemistry. Some reactions, e.g. hydrogen reacting with oxygen to produce water, though thermodynamically possible (the energy of the product state is lower than the energy of the reactant state), only happen under certain conditions, e.g. ignition. Ignition provides the initial energy to induce the reaction. The necessary amount of energy is called activation energy. Or, there's some other reactant (catalyst) in the system which provides a shortcut reaction mechanism that gets around the energy barrier for the reaction to happen. On the other hand, from the viewpoint of data science, this can be understood by analogizing to gradient descent. This greedy algorithm is similar to gradient descent, which may stuck into a local minimum, and in this situation some momentum is needed to get over the local minimum and continue the search. We will showcase this situation later.
 
+> There could be better algorithms that are yet to be discovered.   
+
+
 ## Test
 On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the clustering results are shown as follows. It's clear that number of clusters increases with rise of temperature. 
 
