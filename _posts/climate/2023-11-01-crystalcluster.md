@@ -24,7 +24,7 @@ When met with water, some of the hydrogen bonds break for water molecules cut in
  
 > If you can't imagine that, [this video](https://www.youtube.com/watch?v=BavKFkSzNFE) (credit: [Berean Builders](https://www.youtube.com/@Bereanbuilders/about)) may help.  
 
-As the partial dissolution system stablizes (aka reaches the **thermodynamically stable state**), it naturally forms several clusters of solid blocks. If we view the sucrose molecules as the data observations to cluster, now we get the result with outliers dissolved away (or as singleton clusters).   
+As the partial dissolution system stablizes (aka reaches the **thermodynamically stable state**, or reaches **equilibrium**), it naturally forms several clusters of solid blocks. If we view the sucrose molecules as the data observations to cluster, now we get the result with outliers dissolved away (or as singleton clusters).   
 
 ## Modelling
 But how can we model this process by computer algorithm? We need to dive deeper into the motive of this spontaneous process - what drives the bond to form/break?   
