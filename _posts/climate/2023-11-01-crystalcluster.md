@@ -65,7 +65,9 @@ $$\Delta H_{i,j}^{form} = - \frac{w_i w_j}{d_{i, j}}$$
 
 This is analogous to the energy stored in a system of two point charges. The closer the two points are, the higher potential they form a bond in between ($\Delta H$ is more negative). The negative inverse manipulation emphasizes this effect for the points that are close enough. The value of $\Delta H_{i,j}^{form}$ **is not** dependent on the state of the system.  
 
-> Under common scenarios we do not add up the weights of data observations in the connected component when calculating enthalpy. If we do so, it would produce a strong gravitational effect that draws a large number of data observations into one cluster, which, is a more faithful reproduction of the crystallization process (crystal growth after nucleation), but is not desired under the data clustering setting. What we want to simulate here is the system kept at the nucleation stage.
+> Under common scenarios we do not add up the weights of data observations in the connected component when calculating enthalpy. If we do so, it would produce a strong gravitational effect that draws a large number of data observations into one cluster, which, is a more faithful reproduction of the crystallization process (crystal growth after nucleation), but is not desired under the data clustering setting. What we want to simulate here is the system kept at the nucleation stage.   
+
+> Weights are not considered in the following experiments. All observations are treated as equal weight.  
 
 > As long as weight is not considered, the generated MST is the same as if Euclidean distance is directly used as the formula for bond energy.  
 
@@ -100,7 +102,6 @@ The description is self-explanatory and I would rather not dive into the details
 ## Test
 On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the clustering results are shown as follows. It's clear that number of clusters increases with rise of temperature. 
 
-{: text-align: center;}
 ![pp1](/assets/crystalcluster/exp1.png)   
 ![pp2](/assets/crystalcluster/exp2.png)
 ![pp3](/assets/crystalcluster/exp3.png)  
