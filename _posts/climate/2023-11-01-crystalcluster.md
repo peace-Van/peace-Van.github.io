@@ -105,7 +105,7 @@ The description is self-explanatory and I would rather not dive into the details
 > There could be better algorithms that are yet to be discovered.   
 
 
-## Test
+## Experiment
 On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the clustering results are shown as follows. It's clear that number of clusters increases with rise of temperature. 
 
 ![pp1](/assets/crystalcluster/exp1.png)   
