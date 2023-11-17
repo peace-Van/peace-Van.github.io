@@ -47,7 +47,10 @@ Next let's define $H$ and $S$ in terms of the data clustering system. We have to
 
  > Distance measures are not limited. Here we assume Euclidean distance.   
    
- - **Clusters: connected components of the graph $G$**. In this way **only the minimum spanning edges (edges on the minimum spanning tree) matter**, because non minimum spanning edges do not affect the connected components of the graph. From a viewpoint of the physical world, if a molecule in the aquatic phase choose to form a bond with a molecule in the solid phase, it would always prioritize the nearest one, resulting in a minimum spanning forest on the graph representation. So the fully connected graph reduces to **a minimum spanning tree of $G$, denoted as $G_{MST}$**.
+ - **Clusters: connected components of the graph $G$**. In this way **only the minimum spanning edges (edges on the minimum spanning tree) matter**, because non minimum spanning edges do not affect the connected components of the graph. From a viewpoint of the physical world, if a molecule in the aquatic phase choose to form a bond with a molecule in the solid phase, it would always prioritize the nearest one, resulting in a minimum spanning forest on the graph representation. So the fully connected graph reduces to **a minimum spanning tree (MST) of $G$, denoted as $G_{MST}$**.
+
+> The MST is similar to a single-linkage hierarchical clustering tree.   
+
  - **State**: The system evolves with bonds forming and breaking during the process before the stable state is reached. During the process, get a snapshot of the system, and we will have a subgraph of $G_{MST}$, with the same set of nodes and a subset of edges.
  - **Action**: A bond forming or breaking is called an action. An action that results in the decrease of the Gibbs free energy is called a **feasible action**.   
 
