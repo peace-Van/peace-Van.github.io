@@ -116,13 +116,13 @@ On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the c
 
 There are two extreme states of the system - the starting state where no bond in the MST is disconnected (so there's only one cluster), and the ending state where every bond is disconnected (so there are $n$ clusters that each observation is a singleton cluster). It's certain that given $T=0$ the system will stay in the starting state, but what is the **minimum $T$** that allows the system to evolve into the ending state?   
 
-Say at a certain temperature $T_{theo}$, the system evolves from the starting state to the ending state and exactly reaches equilibrium. The $\Delta G$ of this process is 
+Say at a certain temperature $T_{theo}$, the system evolves from the starting state to the ending state which is the global optimum. The $\Delta G$ of this process is 
 
 $$\Delta G = \Delta H - T_{theo} \Delta S = \sum_{i, j \in e_{MST}} \frac{w_i w_j}{d_{i, j}} - T_{theo} \log N$$
 
 > It's a bond-breaking process so both $\Delta H$ and $\Delta S$ are positive. The maximum entropy for the system is $\log N$, and $N = \sum_{j=1}^n w_j$.  
 
-Given the state reaches equilibrium, we have $\Delta G = 0$, so
+At the thermodynamically stable state, we have $\Delta G = 0$, so
 
 $$T_{theo} = \frac{\sum_{i, j \in e_{MST}} \frac{w_i w_j}{d_{i, j}}}{\log N}$$
 
