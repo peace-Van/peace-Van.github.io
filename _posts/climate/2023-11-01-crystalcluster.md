@@ -109,6 +109,26 @@ On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the c
 ![pp5](/assets/crystalcluster/exp5.png)
 ![pp6](/assets/crystalcluster/exp6.png)  
 
+## Theoretical temperature and the scaling of $T$
+
+There are two extreme states of the system - the starting state where no bond in the MST is disconnected (so there's only one cluster), and the ending state where every bond is disconnected (so there are $n$ clusters that each observation is a singleton cluster). It's certain that given $T=0$ the system will stay in the starting state, but what is the **minimum $T$** that allows the system to evolve into the ending state?   
+
+Say at a certain temperature $T_{theo}$, the system evolves from the starting state to the ending state and exactly just reaches equilibrium. The $\Delta G$ of this process is 
+
+$$\Delta G = \Delta H - T_{theo} \Delta S = \sum_{i, j \in e_{MST}} \frac{w_i w_j}{d_{i, j}} - T_{theo} \log N$$
+
+> It's a bond-breaking process so both $\Delta H$ and $\Delta S$ are positive. The maximum entropy for the system is $\log N$, and $N = \sum_{j=1}^n w_j$.  
+
+Given the state reaches equilibrium, we have $\Delta G = 0$, so
+
+$$T_{theo} = \frac{\sum_{i, j \in e_{MST}} \frac{w_i w_j}{d_{i, j}}}{\log N}$$
+
+This is the value of $T$ that thermodynamically (or say theoretically) guarantees the system evolves into the ending state. But the evolution may not be possible by kinetics, which means the `greedy-backtrack` algorithm may not discover the ending state.   
+
+The theoretical temperature of the Iris flower dataset is calculated to be ~179.8. Our experiment showed given $T=180$, the system evolved into a state of 27 clusters instead of the theoretical 102 clusters based on the `greedy-backtrack` algorithm.   
+
+So what can theoretical temperature tell us? It provides a hint of the scaling of the parameter $T$ on the given dataset. So we can better estimate an initial value for trial by knowing its order of magnitude - whether we should start the trial from some value below ten, or some tens, or some hundreds.   
+
 ## Further Information
 This method actually belongs to a group of clustering algorithms of *optimising different criteria – divisive strategy over MST* named by [Marek Gagolewski et al. (2023)](https://arxiv.org/pdf/2303.05679.pdf). In the article they comprehensively studied the clustering algorithms based on MST and compared with traditional algorithms like $k$-means, BIRCH, linkage, PAM, etc. They concluded that *MSTs are suitable for representing dense clusters of arbitrary shapes, and are relatively robust to outliers in the outer parts of the feature space*.   
 
