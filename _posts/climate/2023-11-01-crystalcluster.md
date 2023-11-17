@@ -13,9 +13,7 @@ Code is on [GitHub](https://github.com/peace-Van/crystal-clustering)
 Imagine how a grain of sugar dissolves in water. Before it dissolves, the sucrose molecules form hydrogen bonds in between, so they condense as a macroscopic solid bulk.   
    
 ![p1](/assets/crystalcluster/sucrose01.png)   
-<p align="center">
 The sucrose molecule (credit: [UCLA chem](https://www.chem.ucla.edu/~harding/IGOC/S/sucrose.html))
-</p>
    
 ![p2](/assets/crystalcluster/sucrose-crystal.png)   
 The crystal structure of sucrose (credit: [Ji-Hun An et al. (2017)](https://www.mdpi.com/2073-4352/7/10/284)) The dashed lines show the hydrogen bonds.
