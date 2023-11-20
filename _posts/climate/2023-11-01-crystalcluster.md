@@ -1,11 +1,11 @@
-﻿---
+---
 layout: post
 title: A novel clustering method - Crystal clustering
 author: Van
 category: climate
 ---
 
-Code is on [GitHub](https://github.com/peace-Van/crystal-clustering)   
+Code is on [GitHub](https://github.com/peace-Van/crystal-clustering), in Python/Matlab.  
    
 *Note: This clustering method, proposed by myself, is used in my climate classification.*   
    
@@ -43,7 +43,7 @@ Next let's define $H$ and $S$ in terms of the data clustering system. We have to
    
 > This is a blog post, so I prefer to make it as simple as possible, using minimal math representations.
    
- - **Data obervations** to be clustered: a **$n$ by $m$ matrix $X$**, rows are the observations and columns are feature dimensions. The observations can have different weights, $w_i$ for the $i$-th observation. This can be plotted as a graph $G$ with $n$ nodes. At this point let's assume the graph is fully connected, and the edge weight is the distance in the feature space between the connected nodes.   
+ - **Data obervations** to be clustered: a **$n$ by $m$ matrix $X$**, rows are the observations and columns are feature dimensions. The observations can have different weights, $w_i$ for the $i$-th observation. This can be plotted as a graph $G$ with $n$ nodes. At this point let's assume the graph is fully connected, and the edge weight is the distance in the feature space between the connected nodes. We also use the term *bond* in chemistry for graph edge, and *form a bond* for *add/connect an edge*, *break a bond* for *remove/disconnect an edge*.  
 
  > Distance measures are not limited. Here we assume Euclidean distance.   
    
@@ -51,7 +51,7 @@ Next let's define $H$ and $S$ in terms of the data clustering system. We have to
 
 > The MST is similar to a single-linkage hierarchical clustering tree.   
 
- - **State**: The system evolves with bonds forming and breaking during the process before the stable state is reached. During the process, get a snapshot of the system, and we will have a subgraph of $G_{MST}$, with the same set of nodes and a subset of edges.
+ - **State**: The system evolves with bonds forming and breaking during the process before the stable state is reached. During the process, get a snapshot of the system, and we will have a subgraph of $G_{MST}$, with the same set of nodes and a subset of edges. The starting state is the connected MST, and there's a potential ending state where all bonds are broken which is possible given a sufficiently high $T$.  
  - **Action**: A bond forming or breaking is called an action. An action that results in the decrease of the Gibbs free energy is called a **feasible action**.   
 
 <p align="center">
@@ -66,7 +66,9 @@ For two data observations $X_i, X_j$ with weight $w_i, w_j$ and the distance bet
 
 $$\Delta H_{i,j}^{form} = - \frac{w_i w_j}{d_{i, j}}$$
 
-This is analogous to the energy stored in a system of two point charges. The closer the two points are, the higher potential they form a bond in between ($\Delta H$ is more negative). The negative inverse manipulation emphasizes this effect for the points that are close enough. The value of $\Delta H_{i,j}^{form}$ **is not** dependent on the state of the system.  
+$$\Delta H_{i,j}^{break} = \frac{w_i w_j}{d_{i, j}}$$
+
+This is analogous to the energy stored in a system of two point charges. The closer the two points are, the higher potential they form a bond in between ($\Delta H$ is more negative), and vice versa. The negative inverse manipulation emphasizes this effect for the points that are close enough. The value of $\Delta H_{i,j}$ **is not** dependent on the state of the system.  
 
 > Under common scenarios we do not add up the weights of data observations in the connected component when calculating enthalpy. If we do so, it would produce a strong gravitational effect that draws a large number of data observations into one cluster, which, is a more faithful reproduction of the crystallization process (crystal growth after nucleation), but is not desired under the data clustering setting. What we want to simulate here is the system kept at the nucleation stage.   
 
@@ -74,9 +76,9 @@ This is analogous to the energy stored in a system of two point charges. The clo
 
 > As long as weight is not considered, the generated MST is the same as if Euclidean distance is directly used as the formula for bond energy.  
 
-Enthalpy is summable with respect to bonds. For a certain state of the system, add up the $\Delta H^{form}$ of all existing bonds and we get the enthalpy of the state. That is
+We define the system enthalpy to be zero at the starting state where all bonds in the MST are connected. Enthalpy is summable with respect to bonds. For a certain state of the system, add up the $\Delta H^{break}$ of all bonds in MST which have broken and we get the enthalpy of the state. That is
 
-$$H = -\sum_{i, j \in e} \frac{w_i w_j}{d_{i, j}}$$
+$$H = \sum_{i, j \in e_{MST} \wedge i, j \notin e} \frac{w_i w_j}{d_{i, j}}$$
 
 ### Entropy
 For a state with $k$ clusters and each cluster $i$ has data observations whose weights sum up to $c_i$, the entropy is calculated as
