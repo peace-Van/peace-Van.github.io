@@ -5,7 +5,7 @@ author: Van
 category: climate
 ---
 
-Python/Matlab code on [GitHub](https://github.com/peace-Van/crystal-clustering)    
+Python/Matlab code on [GitHub repo](https://github.com/peace-Van/crystal-clustering)    
    
 *Note: This clustering method, proposed by myself, is used in my climate classification.*   
    
