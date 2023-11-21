@@ -87,7 +87,7 @@ $$S = \frac{1}{N} \sum_{i=1}^k c_i \log \frac{c_i}{N}$$
 
 where $N = c_1 + c_2 + ... + c_k = \sum_{j=1}^n w_j$. This is from the definition of information entropy.  
    
-It seems untrivial to efficiently calculate the entropy change of an action ($\Delta S_{i,j}$). Here we calculate both the entropy of the state before the action and the entropy of the state after the action, and then subtract. Unlike enthalpy change, this value **is** dependent on the state of the system.   
+It seems non-trivial to efficiently calculate the entropy change of an action ($\Delta S_{i,j}$). Here we calculate both the entropy of the state before the action and the entropy of the state after the action, and then subtract. Unlike enthalpy change, this value **is** dependent on the state of the system.   
 
 > The $\Delta S$ is sometimes called information gain.
 
