@@ -100,7 +100,7 @@ $$f(G_{MST}, T) = H - TS$$
 
 is minimized. $T$ is a given positive constant (hyperparamter). $H$ and $S$ are defined above.  
    
-The Matlab code provides four algorithms, three of which are experimental and for research purposes. Here I would only introduce the `greedy-backtrack` algorithm, which should be used in most cases. This algorithm simulates the precipitation-solubility equilibrium.  
+The Matlab code provides four algorithms, three of which are experimental and for research purposes. Here I would only introduce the `greedy-backtrack` algorithm, which is the go-to algorithm in most cases. This algorithm simulates the precipitation-solubility equilibrium.  
 
 ![p3](/assets/crystalcluster/algorithm.PNG)
 
