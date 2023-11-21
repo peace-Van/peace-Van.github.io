@@ -120,7 +120,7 @@ On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the c
 
 > A more detailed analysis based on the climate cluster centroids dataset is in [Sec 6](https://peace-van.github.io/climate/2023/11/17/sec6.html).   
 
-## Theoretical temperature and the scaling of $T$
+## Theoretical temperature and the scale of $T$
 
 There are two extreme states of the system - the starting state where no bond in the MST is disconnected (so there's only one cluster), and the ending state where every bond is disconnected (so there are $n$ clusters that each observation is a singleton cluster). It's certain that given $T=0$ the system will stay in the starting state, but what is the **minimum $T$** that allows the system to evolve into the ending state?   
 
