@@ -118,7 +118,7 @@ On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the c
 ![pp5](/assets/crystalcluster/exp5.png)
 ![pp6](/assets/crystalcluster/exp6.png)  
 
-> A more detailed analysis based on the climate cluster centroids dataset is in [Sec 6](https://peace-van.github.io/climate/2023/11/17/sec6.html).   
+> A more detailed analysis based on the climate cluster centroids dataset is in [Sec 6](https://peace-van.github.io/climate/2023/11/17/sec6.html). There we can see $T$ not only controls the number of clusters, but also affects their morphology.   
 
 ## Theoretical temperature and the scale of $T$
 
