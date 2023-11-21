@@ -91,7 +91,7 @@ It's not easy to calculate the entropy change of an action ($\Delta S_{i,j}$) wi
 
 > The $\Delta S$ is sometimes called information gain.
 
-> There are data structures ([Link/cut tree](https://courses.csail.mit.edu/6.851/spring07/scribe/lec04.pdf), [Euler tour tree](https://courses.csail.mit.edu/6.851/spring07/scribe/lec05.pdf)) specialized for tracking the connected components of a forest which optimize the running time of $\Delta S$ calculation, which I may use later. For now the implementation is brute-force as described above.   
+> There are data structures ([Link/cut tree](https://courses.csail.mit.edu/6.851/spring07/scribe/lec04.pdf), [Euler tour tree](https://courses.csail.mit.edu/6.851/spring07/scribe/lec05.pdf)) specialized for tracking the connected components of a forest which optimize the running time of $\Delta S$ calculation, which I may utilize later. For now the implementation is brute-force as described above.   
 
 ## Algorithm
 We are going to solve the optimization problem on $G_{MST}$. Remove some edges of $G_{MST}$, so that
