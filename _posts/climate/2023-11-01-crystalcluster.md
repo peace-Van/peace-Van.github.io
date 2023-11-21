@@ -87,7 +87,11 @@ $$S = \frac{1}{N} \sum_{i=1}^k c_i \log \frac{c_i}{N}$$
 
 where $N = c_1 + c_2 + ... + c_k = \sum_{j=1}^n w_j$. This is from the definition of information entropy.  
    
-It's not easy to calculate the entropy change of an action ($\Delta S_{i,j}$) without using some approximation method. We have to calculate both the entropy of the state before the action and the entropy of the state after the action, and then subtract. Unlike enthalpy change, this value **is** dependent on the state of the system.
+It's not easy to calculate the entropy change of an action ($\Delta S_{i,j}$) without using some approximation method. We have to calculate both the entropy of the state before the action and the entropy of the state after the action, and then subtract. Unlike enthalpy change, this value **is** dependent on the state of the system.   
+
+> The $\Delta S$ is sometimes called information gain.
+
+> There are data structures ([Link/cut tree](https://courses.csail.mit.edu/6.851/spring07/scribe/lec04.pdf), [Euler tour tree](https://courses.csail.mit.edu/6.851/spring07/scribe/lec05.pdf)) specialized for tracking the connected components of a forest which optimize the running time of $\Delta S$ calculation, which I may use later. For now the implementation is brute-force as described above.   
 
 ## Algorithm
 We are going to solve the optimization problem on $G_{MST}$. Remove some edges of $G_{MST}$, so that
@@ -149,6 +153,6 @@ It may need more trial and error to get the best $T$ for the desirable outcome.
 
 > Here $T$ involves everything that moves the equilibrium, not only temperature. For example in the solubility scenario it can point to the amount of solvent - with enough water sugar can be totally dissolved, which corresponds to a very high $T$ so that every data observation goes into a singleton cluster. *Relaxation strength* can better describe this parameter. The physical phenomenon is more complex than what is discussed above, and there's no need to dive into individual factors that affect the equilibrium to introduce the clustering method.   
 
-> The most similar method discussed by [Marek Gagolewski et al. (2023)](https://arxiv.org/pdf/2303.05679.pdf) is [ITM by Andreas C. M¨uller et al. (2012)](https://www.nowozin.net/sebastian/papers/mueller2012itclustering.pdf). Their method requires the number of clusters $k$ as input and targets at maximizing the mutual information between input data and output labels. It approximates on entropy calculation and thus may run much faster.
+> The most similar method discussed by [Marek Gagolewski et al. (2023)](https://arxiv.org/pdf/2303.05679.pdf) is [ITM by Andreas C. M¨uller et al. (2012)](https://www.nowozin.net/sebastian/papers/mueller2012itclustering.pdf). Their method requires the number of clusters $k$ as input and targets at maximizing the mutual information between input data and output labels. Following a similar greedy MST-cut approach, it focuses on intra-cluster entropy instead of our inter-cluster (intra-system) entropy.   
 
 This method may also have more advanced applications, such as a multi-stage clustering process which simulates the fine fractionation operation in chemical production: at a higher temperature, the first aggregated cluster is removed from the system, and then gradually cool down to remove the subsequent clusters step by step at different levels of temperature. The gravitational effect of agglomerated weight is yet to be further explored and may have its potential applications.
