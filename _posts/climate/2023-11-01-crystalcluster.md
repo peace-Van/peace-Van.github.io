@@ -52,7 +52,7 @@ Next let's define $H$ and $S$ in terms of the data clustering system. We have to
 > The MST is similar to a single-linkage hierarchical clustering tree.   
 
  - **State**: The system evolves with bonds forming and breaking during the process before the stable state is reached. During the process, get a snapshot of the system, and we will have a subgraph of $G_{MST}$, with the same set of nodes and a subset of edges. The starting state is the connected MST, and there's a potential ending state where all bonds are broken which is possible given a sufficiently high $T$.  
- - **Action**: A bond forming or breaking is called an action. An action that results in the decrease of the Gibbs free energy is called a **feasible action**.   
+ - **Action**: A bond forming or breaking is called an action. An action that results in a decrease of the Gibbs free energy is called a **feasible action**.   
 
 <p align="center">
    <img src="/assets/crystalcluster/adjacency.png" />
