@@ -91,7 +91,7 @@ It's not easy to calculate the entropy change of an action ($\Delta S_{i,j}$) wi
 
 > The $\Delta S$ is sometimes called information gain.
 
-> There are data structures ([Link/cut tree](https://courses.csail.mit.edu/6.851/spring07/scribe/lec04.pdf), [Euler tour tree](https://courses.csail.mit.edu/6.851/spring07/scribe/lec05.pdf)) specialized for tracking the connected components of a forest which optimize the running time of $\Delta S$ calculation, which I may utilize later. For now the implementation is brute-force as described above.   
+> There are data structures ([Link/cut tree](https://courses.csail.mit.edu/6.851/spring07/scribe/lec04.pdf), [Euler tour tree](https://courses.csail.mit.edu/6.851/spring07/scribe/lec05.pdf)) specialized for tracking the connected components of a dynamic forest which optimize the running time of $\Delta S$ calculation, which I may utilize later. For now the implementation is brute-force as described above.   
 
 ## Algorithm
 We are going to solve the optimization problem on $G_{MST}$. Remove some edges of $G_{MST}$, so that
@@ -104,11 +104,9 @@ The Matlab code provides four algorithms, three of which are experimental and fo
 
 ![p3](/assets/crystalcluster/algorithm.PNG)
 
-The description is self-explanatory and I would rather not dive into the details here. Interested readers may check the commented code. One thing to note is that the algorithm does not guarantee to converge nor to find the global optimum (aka the **thermodynamically stable state**), but in most cases it converges fast and the result is good enough to use (or even preferred over the thermodynamically stable state, as we can see in [Sec 6](https://peace-van.github.io/climate/2023/11/17/sec6.html)). It may not be applicable to large datasets because it's $O(n^2)$ in both time and space complexity.
+The description is self-explanatory and I would rather not dive into the details here. Interested readers may check the commented code. One thing to note is that the algorithm does not guarantee to converge nor to find the global optimum (aka the **thermodynamically stable state**), but in most cases it converges fast and the result is good enough to use (or even preferred over the thermodynamically stable state, as we can see in [Sec 6](https://peace-van.github.io/climate/2023/11/17/sec6.html)). For now it may not be applicable to large datasets because it's $O(n^2)$ in both time and space complexity, but there are possible improvements to make it usable on large datasets, e.g. an optimized data structure to maintain $\Delta S$ on the dynamic tree as mentioned above, a fast algorithm to construct the MST based on Euclidean distance, etc.
 
 > Why is this algorithm not guaranteed to find the global optimum? It's easy to understand by physical chemistry. Some reactions, e.g. hydrogen reacting with oxygen to produce water, though thermodynamically possible (the energy of the product state is lower than the energy of the reactant state), only happen under certain conditions, e.g. ignition. Ignition provides the initial energy to induce the reaction. The necessary amount of energy is called activation energy. Or, there's some other reactant (catalyst) in the system which provides a shortcut reaction mechanism that gets around the energy barrier for the reaction to happen. On the other hand, from the viewpoint of data science, this can be understood by analogizing to gradient descent. This greedy algorithm is similar to gradient descent, which may stuck into a local minimum, and in this situation some momentum is needed to get over the local minimum and continue the search. We will showcase this situation in [Sec 6](https://peace-van.github.io/climate/2023/11/17/sec6.html).
-
-> There could be better algorithms that are yet to be discovered.   
 
 ## Experiment
 On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the clustering results are shown as follows. It's clear that number of clusters increases with rise of temperature. 
