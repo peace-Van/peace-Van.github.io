@@ -118,7 +118,7 @@ On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the c
 
 > More details are elaborated in [Sec 6](https://peace-van.github.io/climate/2023/11/17/sec6.html) based on the climate cluster centroids dataset. There we can see $T$ not only controls the number of clusters, but also affects their morphology.
 
-> The algorithm is benchmarked on 73 small datasets [described by Marek Gagolewski](https://genieclust.gagolewski.com/weave/benchmarks_details.html) using the [clustbench](https://clustering-benchmarks.gagolewski.com/) package and achieves very high score. Details are in the [Github repo](https://github.com/peace-Van/crystal-clustering).   
+> The algorithm is benchmarked on 73 datasets [described by Marek Gagolewski](https://genieclust.gagolewski.com/weave/benchmarks_details.html) using the [clustbench](https://clustering-benchmarks.gagolewski.com/) package and achieves very high score. Details are in the [Github repo](https://github.com/peace-Van/crystal-clustering).   
 
 ## Theoretical temperature and the scale of data
 
