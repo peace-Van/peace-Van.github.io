@@ -116,7 +116,9 @@ On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the c
 ![pp5](/assets/crystalcluster/exp5.png)
 ![pp6](/assets/crystalcluster/exp6.png)  
 
-> More details are elaborated in [Sec 6](https://peace-van.github.io/climate/2023/11/17/sec6.html) based on the climate cluster centroids dataset. There we can see $T$ not only controls the number of clusters, but also affects their morphology.   
+> More details are elaborated in [Sec 6](https://peace-van.github.io/climate/2023/11/17/sec6.html) based on the climate cluster centroids dataset. There we can see $T$ not only controls the number of clusters, but also affects their morphology.
+
+> The algorithm is benchmarked on 73 small datasets [described by Marek Gagolewski](https://genieclust.gagolewski.com/weave/benchmarks_details.html) using the [clustbench](https://clustering-benchmarks.gagolewski.com/) package and achieves very high score. Details are in the [Github repo](https://github.com/peace-Van/crystal-clustering).   
 
 ## Theoretical temperature and the scale of data
 
@@ -141,7 +143,7 @@ So what does the theoretical temperature tell us? As far as I know it provides a
 ## Further Information
 This method actually belongs to a group of clustering algorithms of *optimising different criteria – divisive strategy over MST* named by [Marek Gagolewski et al. (2023)](https://arxiv.org/pdf/2303.05679.pdf). In the article they comprehensively studied the clustering algorithms based on MST and compared with traditional algorithms like $k$-means, BIRCH, linkage, PAM, etc. They concluded that *MSTs are suitable for representing dense clusters of arbitrary shapes, and are relatively robust to outliers in the outer parts of the feature space*.   
 
-This method is out of their scope of study because it does not accept a fixed number of clusters $k$ as input. Rather, we use a *relaxation strength* parameter $T$. This can have its own pros and cons. $k$ is more intuitive to humans, while the good things are 
+This method is out of their scope of study because it normally does not accept a fixed number of clusters $k$ as input. Rather, we use a *relaxation strength* parameter $T$. This can have its own pros and cons. $k$ is more intuitive to humans, while the good things are 
 
 - the scale is continuous, unlike $k$ has to be an integer
 - easier to deal with outliers, no need to investigate the number of outliers for a good guess of $k$
