@@ -27,6 +27,6 @@
 * [Sec 2. Vegetation mapping result and discussion](/_posts/climate/2023-11-11-sec2.md)
 * [Sec 3. Climate features and simple SOM clustering](/_posts/climate/2023-11-12-sec3.md)
 * [Sec 4. The 322 scheme](/_posts/climate/2023-11-14-sec4.md)
-* [Sec 5. Historical climate change (1901-2020) based on the 322 scheme]
+* [Sec 5. Historical climate change (1901-2020) based on the 322 scheme](/_posts/climate/2023-11-23-sec5.md)
 * [Sec 6. 533 SOM and crystal clustering](/_posts/climate/2023-11-17-sec6.md)
 * [Sec 7. The 533-5.2 scheme](/_posts/climate/2023-11-23-sec7.md)
