@@ -7,7 +7,7 @@ category: climate
 
 Python/Matlab code on [GitHub repo](https://github.com/peace-Van/crystal-clustering)    
    
-*Note: This clustering method, proposed by myself, is used in the climate classification.*   
+*This clustering method, proposed by myself, is used in the climate classification.*   
    
 ## Phenomenon
 Imagine how a grain of sugar dissolves in water. Before it dissolves, the sucrose molecules form hydrogen bonds in between, so they condense as a macroscopic solid bulk.   
