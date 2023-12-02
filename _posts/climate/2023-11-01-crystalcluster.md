@@ -107,7 +107,7 @@ The description is self-explanatory and I would rather not dive into the details
 > Why is this algorithm not guaranteed to find the global optimum? It's easy to understand by physical chemistry. Some reactions, e.g. hydrogen reacting with oxygen to produce water, though thermodynamically possible (the energy of the product state is lower than the energy of the reactant state), only happen under certain conditions, e.g. ignition. Ignition provides the initial energy to induce the reaction. The necessary amount of energy is called activation energy. Or, there's some other reactant (catalyst) in the system which provides a shortcut reaction mechanism that gets around the energy barrier for the reaction to happen. On the other hand, from the viewpoint of data science, this can be understood by analogizing to gradient descent. This greedy algorithm is similar to gradient descent, which may stuck into a local minimum, and in this situation some momentum is needed to get over the local minimum and continue the search. We will showcase this situation in [Sec 6](https://peace-van.github.io/climate/2023/11/17/sec6.html).
 
 ## Experiment
-On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the clustering results are shown as follows. For illustration purpose, we only worked on the 102 unique combinations of the last two dimensions. It's clear that number of clusters increases with rise of temperature. 
+On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the clustering results are shown as follows. For illustration purpose, we only work on the 102 unique combinations of the last two dimensions. It's clear that number of clusters increases with rise of temperature. 
 
 ![pp1](/assets/crystalcluster/exp1.png)   
 ![pp2](/assets/crystalcluster/exp2.png)
@@ -116,7 +116,7 @@ On the [Iris flower dataset](https://archive.ics.uci.edu/dataset/53/iris), the c
 ![pp5](/assets/crystalcluster/exp5.png)
 ![pp6](/assets/crystalcluster/exp6.png)  
 
-> More details are elaborated in [Sec 6](https://peace-van.github.io/climate/2023/11/17/sec6.html) based on the climate cluster centroids dataset. There we can see $T$ not only controls the number of clusters, but also affects their morphology.
+> More details are elaborated in [Sec 6](https://peace-van.github.io/climate/2023/11/17/sec6.html) based on the climate cluster centroids dataset. There we can see $T$ not only controls the number of clusters, but also affects their morphology. This can also be obsereved from the different results of $T=20$ and $T=30$ on the Iris example.  
 
 > The algorithm is benchmarked on 73 datasets [described by Marek Gagolewski](https://genieclust.gagolewski.com/weave/benchmarks_details.html) using the [clustbench](https://clustering-benchmarks.gagolewski.com/) package and achieves very high score. Details are in the [Github repo](https://github.com/peace-Van/crystal-clustering).   
 
