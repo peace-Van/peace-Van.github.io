@@ -18,6 +18,4 @@ category: poem
 ![p2](/assets/tianjingsha/2.jpg)
   
 ![p3](/assets/tianjingsha/3.jpg)
-  
-![p4](/assets/tianjingsha/4.jpg)
 
