@@ -10,6 +10,8 @@
 * [阮郎归.耒阳道中为张处父推官赋](/_posts/poem/2023-11-08-ruanlanggui.md)
 * [面朝大海 青松常在](/_posts/poem/2023-11-08-facingthesea.md)
 * [三行遗诗](/_posts/poem/2023-11-17-deathnote.md)
+* [天净沙](/_posts/poem/2023-12-10-tianjingsha.md)
+* [哥哥，今夜我在温哥华](/_posts/poem/2023-12-10-gegevancouver.md)
 
 ## Quantitative Investment
 
