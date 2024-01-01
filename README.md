@@ -19,6 +19,8 @@
 
 ## Miscellaneous
 
+* [2023年终感怀](/_posts/misc/2024-01-01-2023.md)
+
 ## Climate
 
 * [The 2023 state of the climate report: Entering uncharted territory](/_posts/climate/2023-10-30-2023report.md)
