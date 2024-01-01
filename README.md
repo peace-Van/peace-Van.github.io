@@ -12,6 +12,8 @@
 * [三行遗诗](/_posts/poem/2023-11-17-deathnote.md)
 * [天净沙](/_posts/poem/2023-12-10-tianjingsha.md)
 * [哥哥，今夜我在温哥华](/_posts/poem/2023-12-10-gegevancouver.md)
+* [念奴娇.过洞庭](/_posts/poem/2024-01-01-guodongting.md)
+* [偈诗二首](/_posts/poem/2024-01-01-buddhism.md)
 
 ## Quantitative Investment
 
